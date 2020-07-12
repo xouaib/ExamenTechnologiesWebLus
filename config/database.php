@@ -1,6 +1,6 @@
 <?php
 // used to connect to the database
-$host = "localhost:8080";
+$host = "localhost";
 $db_name = "club";
 $username = "root";
 $password = "";

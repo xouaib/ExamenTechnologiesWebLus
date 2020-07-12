@@ -53,7 +53,7 @@ function validate() {
   }
 
   // check result
-  if (validationMessage.length > 0) {
+  if (validationMessage) {
     alert(validationMessage);
     return false;
   }
