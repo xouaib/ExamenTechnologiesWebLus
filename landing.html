@@ -13,10 +13,11 @@
       <h1>Inscription au club de la faculte des sciences</h1>
       <br />
       <form
-        action=""
+        action="register.php"
         method="post"
         class="formAdherant"
         onsubmit="return validate();"
+        enctype="multipart/form-data"
       >
         <fieldset>
           <legend>Information personnelles:</legend>
@@ -78,13 +79,14 @@
                         type="radio"
                         name="status"
                         id="enseignantStatusId"
+                        value="Enseignant"
                       />
                     </td>
                     <td>
                       <label for="enseignant">Enseignant</label>
                     </td>
                     <td>
-                      <input type="radio" name="status" id="etudiantStatusId" />
+                      <input type="radio" name="status" id="etudiantStatusId" value="Etudiant"/>
                     </td>
                     <td>
                       <label for="etudiant">Etudiant</label>

@@ -35,7 +35,7 @@ function validate() {
 
   // Le mot de passe est composé de au moins 8 caractères.
   var motdepasse = document.getElementById("passwordId").value;
-  if (pseudo.length < 8) {
+  if (motdepasse.length < 8) {
     validationMessage = validationMessage
       ? validationMessage +
         "\nmot de passe est composé de au moins 8 caractères."

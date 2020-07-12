@@ -72,5 +72,5 @@ COMMIT;
 -- Constraints
 --
 alter table adherent add Constraints chk_status CHECK (Status = 'Enseignant' or Status = 'Etudiant')
-alter table adherent add Constraints chk_annee CHECK (Annee = 1 or Annee = 2 or Annee = 3)
+alter table adherent add Constraints chk_annee CHECK (Annee = 1 or Annee = 2 or Annee = 3 or Annee = null)
 
