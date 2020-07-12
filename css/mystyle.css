@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.main {
+  margin: 20px auto;
+  width: 700px;
+}
+
+h1 {
+  font-size: 1.9rem;
+  font-weight: bolder;
+}
+
+.formAdherant{
+  border: 1px solid;
+  padding: 15px 20px 15px 20px;
+}
+
+fieldset:first-child {
+  margin-bottom: 10px;
+}
+
+.infosPerso {
+  background-color: rgba(124, 203, 220, 0.9);
+  padding: 10px;
+}
+
+.infosPerso input,
+.infosPerso label {
+  padding: 2px;
+  margin: 2px 1px 2px 0px;
+}
+
+.informationSuppClass {
+  background-color: rgba(203, 220, 124, 0.9);
+  padding: 10px;
+}
+
+.informationSuppClass p {
+  margin: 10px 1px 10px 0px;
+}
+
+.buttons {
+  width: 100%;
+  
+}
+
+.buttons button{
+  margin: 4px 3px 0px 0px;
+  padding: 5px;
+}
+
+.informationSuppClass .hobbiesList,
+.informationSuppClass .languagesList {
+  width: 100%;
+}
+
+.informationSuppClass .hobbiesList {
+  padding-bottom: 10px;
+}
+
+.informationSuppClass .hobbiesList label,
+.informationSuppClass .languagesList label {
+  margin-right: 50px;
+}
+
+.informationSuppClass .hobbiesList input,
+.informationSuppClass .languagesList input {
+  margin-right: 3px;
+}
+
+.prenom label,
+.prenom input {
+  display: inline-block;
+}
+
+.prenom label {
+  width: 220px;
+}
+
+.nom label,
+.nom input {
+  display: inline-block;
+}
+
+.nom label {
+  width: 220px;
+}
+
+.email label,
+.email input {
+  display: inline-block;
+}
+
+.email label {
+  width: 220px;
+}
+
+.pseudo label,
+.pseudo input {
+  display: inline-block;
+}
+
+.pseudo label {
+  width: 220px;
+}
+
+.password label,
+.password input {
+  display: inline-block;
+}
+
+.password label {
+  width: 220px;
+}
+
+.status {
+  width: 100%;
+}
+
+.status label,
+.status input {
+  display: inline-block;
+}
+
+.status label {
+  width: 140px;
+}
+
+.status input {
+  width: 100px;
+}
+
+.annee label,
+.annee input {
+  display: inline-block;
+}
+
+.annee label {
+  width: 220px;
+}
+
+.photo label,
+.photo input {
+  display: inline-block;
+}
+
+.photo label {
+  width: 220px;
+}
