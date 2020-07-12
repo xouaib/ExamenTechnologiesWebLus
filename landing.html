@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestion du club avec php mysql</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
+
+  <body>
+    <div class="main">
+      <h1>Inscription au club de la faculte des sciences</h1>
+      <br />
+      <form
+        action=""
+        method="post"
+        class="formAdherant"
+        onsubmit="return validate();"
+      >
+        <fieldset>
+          <legend>Information personnelles:</legend>
+          <table>
+            <tr>
+              <td>
+                <label for="prenom" class="prenom">Entrez votre prenom :</label>
+              </td>
+              <td>
+                <input type="text" name="prenom" id="prenomId" class="prenom" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="nom" class="nom">Entrez votre nom : </label>
+              </td>
+              <td>
+                <input type="text" name="nom" id="nomId" class="nom" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">Entrez votre email : </label>
+              </td>
+              <td>
+                <input type="text" name="email" id="emailId" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="pseudo">choisissez un pseudo : </label>
+              </td>
+              <td>
+                <input type="text" name="pseudo" id="pseudoId" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="motdepasse">choisissez un mot de passe : </label>
+              </td>
+              <td>
+                <input type="password" name="password" id="passwordId" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" style="text-align: justify;">
+                <table style="width: 100%;">
+                  <tr>
+                    <td>
+                      <label for="status">Status : </label>
+                    </td>
+                    <td>
+                      <input
+                        type="radio"
+                        name="status"
+                        id="enseignantStatusId"
+                      />
+                    </td>
+                    <td>
+                      <label for="enseignant">Enseignant</label>
+                    </td>
+                    <td>
+                      <input type="radio" name="status" id="etudiantStatusId" />
+                    </td>
+                    <td>
+                      <label for="etudiant">Etudiant</label>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="siEtudiant">Si Etudiant, annee : </label>
+              </td>
+              <td>
+                <select name="etudiantAnnee" id="etudiantAnneeId">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="photo">Photo : </label>
+              </td>
+              <td>
+                <input type="file" name="photo" id="photoId" />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Information Supplementaires:</legend>
+          <table class="informationSuppClass">
+            <tr>
+              <td colspan="4">
+                <label for="hobbies">Hobbies</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="checkbox"
+                  name="informatique"
+                  id="informatiqueId"
+                  value="Informatique"
+                /><label for="informatique">Informatique</label>
+              </td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="sport"
+                  id="sportId"
+                  value="Sport"
+                /><label for="sport">Sport</label>
+              </td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="voyages"
+                  id="voyagesId"
+                  value="Voyages"
+                /><label for="voyages">Voyages</label>
+              </td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="musique"
+                  id="musiqueId"
+                  value="Musique"
+                /><label for="musique">Musique</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <hr />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <label for="languages">Languages</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="checkbox"
+                  name="arabe"
+                  id="arabeId"
+                  value="Arabe"
+                /><label for="arabe">Arabe</label>
+              </td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="francais"
+                  id="francaisId"
+                  value="Francais"
+                /><label for="francais">Francais</label>
+              </td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="espagnol"
+                  id="espagnolId"
+                  value="Espagnol"
+                /><label for="espagnol">Espagnol</label>
+              </td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="englais"
+                  id="englaisId"
+                  value="Englais"
+                /><label for="englais">Englais</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button type="submit" id="validerId">Valider</button>
+                <button type="reset" id="resetId">Effacer</button>
+              </td>
+              <td colspan="3"></td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
